@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef } from 'react'
-import { FaCode, FaBrain, FaDatabase, FaCloud } from 'react-icons/fa'
+import { FaBrain, FaDatabase } from 'react-icons/fa'
 
 const Projects = () => {
   const ref = useRef(null)
