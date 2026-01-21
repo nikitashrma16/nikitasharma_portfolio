@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikita Sharma</title>
+    <script>
+      // GitHub Pages SPA fallback:
+      // On refresh / deep-link, GitHub Pages serves 404.html. We redirect back to / with the path encoded.
+      // index.html will decode and restore the route.
+      (function () {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        var redirect = '/?redirect=' + encodeURIComponent(path + search + hash);
+        window.location.replace(redirect);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
+

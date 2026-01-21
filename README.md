@@ -115,3 +115,35 @@ Nikita Sharma
 - Email: nikita.shrma.cs@gmail.com
 - LinkedIn: [nikita-sharma-dev](https://linkedin.com/in/nikita-sharma-dev)
 - Location: Chicago, Illinois
+
+## Deploy to GitHub Pages (Custom Domain: `nikitasharma.tech`)
+
+This repo is already configured for GitHub Pages deploy via **GitHub Actions**.
+
+### 1) GitHub repo settings
+
+- Go to **Settings → Pages**
+- **Build and deployment**:
+  - Source: **GitHub Actions**
+
+### 2) Add your custom domain
+
+- Go to **Settings → Pages → Custom domain**
+- Enter: `nikitasharma.tech`
+- Enable **Enforce HTTPS** after it becomes available
+
+### 3) DNS settings
+
+In your domain provider DNS, add:
+
+- **A records** (apex domain `nikitasharma.tech`) pointing to GitHub Pages IPs:
+  - 185.199.108.153
+  - 185.199.109.153
+  - 185.199.110.153
+  - 185.199.111.153
+- **CNAME** for `www` (optional) → `<your-github-username>.github.io`
+
+### Notes
+
+- The `public/CNAME` file is included so GitHub Pages keeps your custom domain on every deploy.
+- `public/404.html` + the redirect handler in `index.html` are included so deep links work on refresh.
