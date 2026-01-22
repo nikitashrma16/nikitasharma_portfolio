@@ -107,7 +107,7 @@ const Hero = () => {
         >
           <div className="hero-photo-container">
             <motion.img
-              src="/Nikita.jpg"
+              src={`${import.meta.env.BASE_URL}Nikita.jpg`}
               alt="Nikita Sharma"
               className="hero-photo"
               whileHover={{ scale: 1.05 }}
